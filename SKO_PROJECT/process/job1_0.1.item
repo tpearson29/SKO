@@ -112,7 +112,7 @@
   </parameters>
   <node componentName="tFileTouch" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileTouch_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend-Studio-20161216_1026-V6.3.1/workspace/dog99&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend-Studio-20161216_1026-V6.3.1/workspace/dog79&quot;"/>
     <elementParameter field="CHECK" name="CREATEDIR" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileTouch_1"/>
