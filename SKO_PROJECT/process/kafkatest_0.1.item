@@ -181,8 +181,8 @@
     <elementParameter field="TEXT" name="KAFKA_TOPIC" value="&quot;mytopic&quot;"/>
     <elementParameter field="TEXT" name="KAFKA_REPLICATION" value="1"/>
     <elementParameter field="TEXT" name="KAFKA_PARTITION" value="1"/>
-    <elementParameter field="CHECK" name="KAFKA_RETENTION_CHECK" value="false"/>
-    <elementParameter field="TEXT" name="KAFKA_RETENTION" value="604800000" show="false"/>
+    <elementParameter field="CHECK" name="KAFKA_RETENTION_CHECK" value="true"/>
+    <elementParameter field="TEXT" name="KAFKA_RETENTION" value="604800"/>
     <elementParameter field="CHECK" name="ZOOKEEPER_SECURITY_IS_ENABLED" value="false"/>
     <elementParameter field="TABLE" name="KAFKA_TOPIC_PROPERTIES"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
