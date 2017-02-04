@@ -167,7 +167,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tKafkaOutput_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tKafkaConnection_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tKafkaConnection_2"/>
     <elementParameter field="CLOSED_LIST" name="KAFKA_VERSION" value="KAFKA_0_10_0_1" show="false"/>
     <elementParameter field="TEXT" name="BROKER_LIST" value="&quot;host1:port1,host2:port2,...&quot;" show="false"/>
     <elementParameter field="TEXT" name="KAFKA_TOPIC" value="&quot;mytopic&quot;"/>
@@ -230,14 +230,14 @@
     <elementParameter field="TEXT" name="ZOOKEEPER_CONNECT" value="&quot;zk1:port1,zk2:port2,...&quot;" show="false"/>
     <elementParameter field="TEXT" name="BROKER_LIST" value="&quot;host1:port1,host2:port2,...&quot;" show="false"/>
     <elementParameter field="TEXT" name="KAFKA_TOPIC" value="&quot;mytopic&quot;"/>
-    <elementParameter field="TEXT" name="GROUP_ID" value="&quot;mygroup&quot;"/>
+    <elementParameter field="TEXT" name="GROUP_ID" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="RESET_OFFSET" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTO_OFFSET_RESET" value="LARGEST" show="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTO_OFFSET_RESET_NEW" value="LATEST"/>
     <elementParameter field="CLOSED_LIST" name="KAFKA_OFFSET_STORAGE" value="ZOOKEEPER" show="false"/>
     <elementParameter field="CHECK" name="KAFKA_DUAL_COMMIT_CHECK" value="true" show="false"/>
-    <elementParameter field="CHECK" name="AUTO_COMMIT_OFFSET" value="true"/>
-    <elementParameter field="TEXT" name="KAFKA_COMMIT_INTERVAL" value="5000"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT_OFFSET" value="false"/>
+    <elementParameter field="TEXT" name="KAFKA_COMMIT_INTERVAL" value="5000" show="false"/>
     <elementParameter field="CHECK" name="USE_BATCH_MAX_DURATION" value="false"/>
     <elementParameter field="TEXT" name="BATCH_MAX_DURATION" value="600000" show="false"/>
     <elementParameter field="CHECK" name="USE_BATCH_MAX_SIZE" value="false"/>
