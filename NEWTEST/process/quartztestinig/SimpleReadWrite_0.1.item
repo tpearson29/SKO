@@ -2,7 +2,7 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="sleep" prompt="sleep?" promptNeeded="false" type="id_Integer" value="10"/>
-    <contextParameter comment="" name="loop" prompt="loop?" promptNeeded="false" type="id_Integer" value="20"/>
+    <contextParameter comment="" name="loop" prompt="loop?" promptNeeded="false" type="id_Integer" value="2"/>
     <contextParameter comment="" name="fileout" prompt="fileout?" promptNeeded="false" type="id_String" value="/home/tpearson"/>
     <contextParameter comment="" name="fileid" prompt="fileid?" promptNeeded="false" type="id_String" value=""/>
   </context>
@@ -136,12 +136,6 @@
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
-  </node>
-  <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSleep_1" show="false"/>
-    <elementParameter field="TEXT" name="PAUSE" value="context.sleep"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSleep_1"/>
   </node>
   <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>
@@ -335,18 +329,19 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileDelete_1"/>
   </node>
+  <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSleep_1" show="false"/>
+    <elementParameter field="TEXT" name="PAUSE" value="context.sleep"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSleep_1"/>
+  </node>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tJava_1">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
   </connection>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tSleep_1">
-    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
-    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSleep_1" offsetLabelX="0" offsetLabelY="0" source="tSleep_1" target="tRowGenerator_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tSleep_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tRowGenerator_1" offsetLabelX="0" offsetLabelY="0" source="tRowGenerator_1" target="tFileOutputDelimited_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -377,6 +372,9 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tFileDelete_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSleep_1" offsetLabelX="0" offsetLabelY="0" source="tSleep_1" target="tRowGenerator_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLoop_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
@@ -394,6 +392,11 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileDelete_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSleep_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
