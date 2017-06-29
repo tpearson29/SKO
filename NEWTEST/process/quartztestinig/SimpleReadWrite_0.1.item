@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="sleep" prompt="sleep?" promptNeeded="false" type="id_Integer" value="5"/>
-    <contextParameter comment="" name="loop" prompt="loop?" promptNeeded="false" type="id_Integer" value="5"/>
+    <contextParameter comment="" name="sleep" prompt="sleep?" promptNeeded="false" type="id_Integer" value="10"/>
+    <contextParameter comment="" name="loop" prompt="loop?" promptNeeded="false" type="id_Integer" value="60"/>
     <contextParameter comment="" name="fileout" prompt="fileout?" promptNeeded="false" type="id_String" value="/home/tpearson"/>
     <contextParameter comment="" name="fileid" prompt="fileid?" promptNeeded="false" type="id_String" value=""/>
   </context>
