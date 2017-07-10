@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_UP-hQGWsEeeNCdneMjf5nQ" name="mysql" id="_P8KisGWsEeeNCdneMjf5nQ" label="mysql" dataPackage="_USaxQGWsEeeNCdneMjf5nQ _USbYUGWsEeeNCdneMjf5nQ _USbYUWWsEeeNCdneMjf5nQ _USbYUmWsEeeNCdneMjf5nQ _USbYU2WsEeeNCdneMjf5nQ _USbYVGWsEeeNCdneMjf5nQ _USbYVWWsEeeNCdneMjf5nQ _USbYVmWsEeeNCdneMjf5nQ _USbYV2WsEeeNCdneMjf5nQ _USbYWGWsEeeNCdneMjf5nQ _USbYWWWsEeeNCdneMjf5nQ _USbYWmWsEeeNCdneMjf5nQ _USbYW2WsEeeNCdneMjf5nQ _USbYXGWsEeeNCdneMjf5nQ _USbYXWWsEeeNCdneMjf5nQ _USbYXmWsEeeNCdneMjf5nQ _USbYX2WsEeeNCdneMjf5nQ _USbYYGWsEeeNCdneMjf5nQ" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="root" Password="KmPzHJIPq/CRBgAuS8IA2A==" ServerName="localhost" DatasourceName="" FileFieldName="" SID="" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_UP_vYGWsEeeNCdneMjf5nQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_URCRMGWsEeeNCdneMjf5nQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_URHwwGWsEeeNCdneMjf5nQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_URHwwWWsEeeNCdneMjf5nQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_URHwwmWsEeeNCdneMjf5nQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_URHww2WsEeeNCdneMjf5nQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_URHwxGWsEeeNCdneMjf5nQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_URHwxWWsEeeNCdneMjf5nQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_URlDwGWsEeeNCdneMjf5nQ" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_URlDwWWsEeeNCdneMjf5nQ" tag="DB ProductVersion" value="5.5.53"/>
+    <taggedValue xmi:id="_URlDwmWsEeeNCdneMjf5nQ" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_UP_vYWWsEeeNCdneMjf5nQ" key="CONN_PARA_KEY_USERNAME" value="root"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USaxQGWsEeeNCdneMjf5nQ" name="information_schema" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USbYUGWsEeeNCdneMjf5nQ" name="amc" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USbYUWWsEeeNCdneMjf5nQ" name="camelorders" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USbYUmWsEeeNCdneMjf5nQ" name="dynamic_meta" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USbYU2WsEeeNCdneMjf5nQ" name="hwt" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USbYVGWsEeeNCdneMjf5nQ" name="iag" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USbYVWWsEeeNCdneMjf5nQ" name="meriel_staging" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USbYVmWsEeeNCdneMjf5nQ" name="meriel_xml" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USbYV2WsEeeNCdneMjf5nQ" name="mysql" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USbYWGWsEeeNCdneMjf5nQ" name="performance_schema" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USbYWWWsEeeNCdneMjf5nQ" name="pharmacy_staging" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USbYWmWsEeeNCdneMjf5nQ" name="staging_data" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USbYW2WsEeeNCdneMjf5nQ" name="talend_administrator531" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USbYXGWsEeeNCdneMjf5nQ" name="talend_administrator621" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USbYXWWsEeeNCdneMjf5nQ" name="talend_administrator631" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USbYXmWsEeeNCdneMjf5nQ" name="tdsc_db621" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USbYX2WsEeeNCdneMjf5nQ" name="tdsc_db631" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_USbYYGWsEeeNCdneMjf5nQ" name="test" dataManager="_UP-hQGWsEeeNCdneMjf5nQ"/>
+</xmi:XMI>
