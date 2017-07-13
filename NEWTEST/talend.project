@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_Vvx08UQfEeeE05wrFdLZLw" label="newtest" description="test" language="java" technicalLabel="NEWTEST" creationDate="2017-05-29T13:28:45.950+1000" author="_Vvx08kQfEeeE05wrFdLZLw" productVersion="Talend Data Fabric-6.3.1.20161216_1026" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/tpearson29/SKO&quot;,&quot;login&quot;:&quot;tpearson29&quot;,&quot;passwd&quot;:&quot;93yhOStxGpyK/MOqJbQx6w==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="MDM" itemsRelationVersion="1.3">
+  <TalendProperties:Project xmi:id="_Vvx08UQfEeeE05wrFdLZLw" label="newtest" description="test" language="java" technicalLabel="NEWTEST" creationDate="2017-05-28T20:28:45.950-0700" author="_Vvx08kQfEeeE05wrFdLZLw" productVersion="Talend Data Fabric-6.3.1.20161216_1026" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/tpearson29/SKO&quot;,&quot;login&quot;:&quot;tpearson29&quot;,&quot;passwd&quot;:&quot;93yhOStxGpyK/MOqJbQx6w==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="MDM" itemsRelationVersion="1.3">
     <technicalStatus xmi:id="_fJRT4EQfEeeE05wrFdLZLw" label="development" code="DEV"/>
     <technicalStatus xmi:id="_fJRT4UQfEeeE05wrFdLZLw" label="testing" code="TEST"/>
     <technicalStatus xmi:id="_fJRT4kQfEeeE05wrFdLZLw" label="production" code="PROD"/>
@@ -24,6 +24,24 @@
       <relatedItems xmi:id="_1dfj7kQfEeeE05wrFdLZLw" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_1dfj70QfEeeE05wrFdLZLw" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_1dfj8EQfEeeE05wrFdLZLw" id="MDM" version="Latest" type="routine"/>
+    </ItemsRelations>
+    <ItemsRelations xmi:id="_KTNeUGfqEee9P51mQgxzBA">
+      <baseItem xmi:id="_KTNeUWfqEee9P51mQgxzBA" id="_FP1EAGfqEee9P51mQgxzBA" version="0.1" type="job"/>
+      <relatedItems xmi:id="_KTNeUmfqEee9P51mQgxzBA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KTNeU2fqEee9P51mQgxzBA" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KTNeVGfqEee9P51mQgxzBA" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KTNeVWfqEee9P51mQgxzBA" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KTNeVmfqEee9P51mQgxzBA" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KTNeV2fqEee9P51mQgxzBA" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KTNeWGfqEee9P51mQgxzBA" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KTNeWWfqEee9P51mQgxzBA" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KTNeWmfqEee9P51mQgxzBA" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KTNeW2fqEee9P51mQgxzBA" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KTNeXGfqEee9P51mQgxzBA" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KTNeXWfqEee9P51mQgxzBA" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KTNeXmfqEee9P51mQgxzBA" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KTNeX2fqEee9P51mQgxzBA" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KTNeYGfqEee9P51mQgxzBA" id="MDM" version="Latest" type="routine"/>
     </ItemsRelations>
     <migrationTask xmi:id="_cWylMEQfEeeE05wrFdLZLw" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_cWylMUQfEeeE05wrFdLZLw" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
