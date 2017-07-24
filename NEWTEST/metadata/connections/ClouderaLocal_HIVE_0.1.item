@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
-  <TalendMetadata:DatabaseConnection xmi:id="_ddqvoHC_EeeLR6K2fPmFug" name="ClouderaLocal_HIVE" id="_dchgIHC_EeeLR6K2fPmFug" label="ClouderaLocal_HIVE" dataPackage="_wzHhYHC_EeeLR6K2fPmFug" DatabaseType="Hive" DriverClass="org.apache.hadoop.hive.jdbc.HiveDriver" URL="jdbc:hive2://quickstart.cloudera:10000/default" dbVersionString="STANDALONE" Port="10000" Username="hdfs" Password="Rg60p2ntALY=" ServerName="quickstart.cloudera" SID="default" SqlSynthax="SQL Syntax" DbmsId="hive_id" ProductId="HIVE" StandardSQL="true" UiSchema="default">
+  <TalendMetadata:DatabaseConnection xmi:id="_ddqvoHC_EeeLR6K2fPmFug" name="ClouderaLocal_HIVE" id="_dchgIHC_EeeLR6K2fPmFug" label="ClouderaLocal_HIVE" dataPackage="_2z-QkHC_EeeLR6K2fPmFug" DatabaseType="Hive" DriverClass="org.apache.hadoop.hive.jdbc.HiveDriver" URL="jdbc:hive2://quickstart.cloudera:10000/default" dbVersionString="STANDALONE" Port="10000" Username="tpearson29" Password="KmPzHJIPq/CRBgAuS8IA2A==" ServerName="quickstart.cloudera" SID="default" SqlSynthax="SQL Syntax" DbmsId="hive_id" ProductId="HIVE" StandardSQL="true" UiSchema="default">
     <taggedValue xmi:id="_scEooHC_EeeLR6K2fPmFug" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_wrJ4MHC_EeeLR6K2fPmFug" tag="Status" value=""/>
     <taggedValue xmi:id="_wrJ4MXC_EeeLR6K2fPmFug" tag="Version" value="0.1"/>
@@ -14,7 +14,7 @@
     <parameters xmi:id="_ddqvonC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_RESOURCEMANAGER_SCHEDULER_ADDRESS" value="quickstart.cloudera:8030"/>
     <parameters xmi:id="_ddqvo3C_EeeLR6K2fPmFug" key="CONN_PARA_KEY_USE_CUSTOM_CONFS" value="true"/>
     <parameters xmi:id="_ddqvpHC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_NAME_NODE_URL" value="hdfs://quickstart.cloudera:8020"/>
-    <parameters xmi:id="_ddqvpXC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_USERNAME" value="hdfs"/>
+    <parameters xmi:id="_ddqvpXC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_USERNAME" value="tpearson29"/>
     <parameters xmi:id="_ddqvpnC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_HADOOP_CLUSTER_ID" value="_MNwHAHC_EeeLR6K2fPmFug"/>
     <parameters xmi:id="_ddqvp3C_EeeLR6K2fPmFug" key="CONN_PARA_KEY_JOB_HISTORY_PRINCIPAL" value="mapred/_HOST@EXAMPLE.COM"/>
     <parameters xmi:id="_ddqvqHC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_HBASE_VERSION" value="Cloudera_CDH5_8"/>
@@ -48,8 +48,8 @@
     <parameters xmi:id="_sasIknC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_KEYTAB" value=""/>
     <parameters xmi:id="_sasIk3C_EeeLR6K2fPmFug" key="HIVE_EXECUTION_ENGINE"/>
     <parameters xmi:id="_sa6yEHC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_USE_SSL" value="false"/>
-    <parameters xmi:id="_sc6WIHC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_SSL_TRUST_STORE_PATH" value=""/>
-    <parameters xmi:id="_sc6WIXC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_SSL_TRUST_STORE_PASSWORD" value=""/>
+    <parameters xmi:id="_yjAKoHC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_SSL_TRUST_STORE_PATH" value=""/>
+    <parameters xmi:id="_yjAKoXC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_SSL_TRUST_STORE_PASSWORD" value=""/>
   </TalendMetadata:DatabaseConnection>
-  <orgomg.cwm.resource.relational:Schema xmi:id="_wzHhYHC_EeeLR6K2fPmFug" name="default" dataManager="_ddqvoHC_EeeLR6K2fPmFug"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_2z-QkHC_EeeLR6K2fPmFug" name="default" dataManager="_ddqvoHC_EeeLR6K2fPmFug"/>
 </xmi:XMI>
