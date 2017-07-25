@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendHDFS="http://www.talend.org/hdfs" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendHDFS:HDFSConnection xmi:id="_ddnsUHC_EeeLR6K2fPmFug" name="ClouderaLocal_HDFS" label="ClouderaLocal_HDFS" dataPackage="_jlZpQHDHEeeLR6K2fPmFug" relativeHadoopClusterId="_MNwHAHC_EeeLR6K2fPmFug" userName="hdfs" rowSeparator="&quot;\n&quot;" fieldSeparator="&quot;;&quot;"/>
+  <TalendHDFS:HDFSConnection xmi:id="_ddnsUHC_EeeLR6K2fPmFug" name="ClouderaLocal_HDFS" label="ClouderaLocal_HDFS" dataPackage="_jlZpQHDHEeeLR6K2fPmFug" relativeHadoopClusterId="_MNwHAHC_EeeLR6K2fPmFug" userName="tpearson" rowSeparator="&quot;\n&quot;" fieldSeparator="&quot;;&quot;"/>
   <orgomg.cwm.resource.relational:Schema xmi:id="_jlZpQHDHEeeLR6K2fPmFug" name="HDFS" dataManager="_ddnsUHC_EeeLR6K2fPmFug">
     <ownedElement xsi:type="relational:TdTable" xmi:id="_jlZpQXDHEeeLR6K2fPmFug" name="nametest" id="_gI3Q8HDHEeeLR6K2fPmFug" label="nametest">
       <taggedValue xmi:id="_jlZpQnDHEeeLR6K2fPmFug" tag="Comment" value=""/>
