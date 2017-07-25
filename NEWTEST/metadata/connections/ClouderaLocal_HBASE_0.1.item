@@ -6,7 +6,7 @@
     <parameters xmi:id="_dd5ZI3C_EeeLR6K2fPmFug" key="CONN_PARA_KEY_RESOURCEMANAGER_SCHEDULER_ADDRESS" value="quickstart.cloudera:8030"/>
     <parameters xmi:id="_dd5ZJHC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_USE_CUSTOM_CONFS" value="true"/>
     <parameters xmi:id="_dd5ZJXC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_NAME_NODE_URL" value="hdfs://quickstart.cloudera:8020"/>
-    <parameters xmi:id="_dd5ZJnC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_USERNAME" value="hdfs"/>
+    <parameters xmi:id="_dd5ZJnC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_USERNAME" value="tpearson"/>
     <parameters xmi:id="_dd5ZJ3C_EeeLR6K2fPmFug" key="CONN_PARA_KEY_HADOOP_CLUSTER_ID" value="_MNwHAHC_EeeLR6K2fPmFug"/>
     <parameters xmi:id="_dd5ZKHC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_JOB_HISTORY_PRINCIPAL" value="mapred/_HOST@EXAMPLE.COM"/>
     <parameters xmi:id="_dd5ZKXC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_HBASE_VERSION" value="Cloudera_CDH5_8"/>
@@ -28,6 +28,7 @@
     <parameters xmi:id="_dd5ZOXC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_DB_PRODUCT" value="HBASE"/>
     <parameters xmi:id="_dd5ZOnC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_HIVE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
     <parameters xmi:id="_dd5ZO3C_EeeLR6K2fPmFug" key="CONN_PARA_KEY_HBASE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+    <parameters xmi:id="_NXTJ8HF4Eee10IOikLqUug" key="CONN_PARA_KEY_HADOOP_CUSTOM_JARS"/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_dd5ZPHC_EeeLR6K2fPmFug" name="HBase" dataManager="_dd5ZIHC_EeeLR6K2fPmFug"/>
 </xmi:XMI>
