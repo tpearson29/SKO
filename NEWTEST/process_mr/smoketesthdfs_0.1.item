@@ -188,6 +188,7 @@
     <elementParameter xmi:id="_yB0QOnDHEeeLR6K2fPmFug" field="CHECK" name="USE_CHECKPOINT" value="false"/>
     <elementParameter xmi:id="_yB0QO3DHEeeLR6K2fPmFug" field="TEXT" name="CHECKPOINT_DIR" value="&quot;file:///tmp/mycheckpoint&quot;" show="false"/>
     <elementParameter xmi:id="_yB0QPHDHEeeLR6K2fPmFug" field="TABLE" name="SPARK_ADVANCED_PROPERTIES"/>
+    <elementParameter xmi:id="_IZTdYHFhEee10IOikLqUug" field="CLOSED_LIST" name="SUPPORTED_SPARK_VERSION" value="SPARK_1_6_0"/>
     <routinesParameter xmi:id="_du8osnDGEeeLR6K2fPmFug" id="_fbcpBEQfEeeE05wrFdLZLw" name="DQTechnical"/>
     <routinesParameter xmi:id="_du8os3DGEeeLR6K2fPmFug" id="_faQWMEQfEeeE05wrFdLZLw" name="DataMasking"/>
     <routinesParameter xmi:id="_du8otHDGEeeLR6K2fPmFug" id="_fLzqgkQfEeeE05wrFdLZLw" name="DataOperation"/>
