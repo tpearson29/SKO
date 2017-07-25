@@ -48,8 +48,9 @@
     <parameters xmi:id="_sasIknC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_KEYTAB" value=""/>
     <parameters xmi:id="_sasIk3C_EeeLR6K2fPmFug" key="HIVE_EXECUTION_ENGINE"/>
     <parameters xmi:id="_sa6yEHC_EeeLR6K2fPmFug" key="CONN_PARA_KEY_USE_SSL" value="false"/>
-    <parameters xmi:id="_TpScgHFkEee10IOikLqUug" key="CONN_PARA_KEY_SSL_TRUST_STORE_PATH" value=""/>
-    <parameters xmi:id="_TpScgXFkEee10IOikLqUug" key="CONN_PARA_KEY_SSL_TRUST_STORE_PASSWORD" value=""/>
+    <parameters xmi:id="_l-QHAHF3Eee10IOikLqUug" key="CONN_PARA_KEY_SSL_TRUST_STORE_PATH" value=""/>
+    <parameters xmi:id="_l-QHAXF3Eee10IOikLqUug" key="CONN_PARA_KEY_SSL_TRUST_STORE_PASSWORD" value=""/>
+    <parameters xmi:id="_vT_HUHF3Eee10IOikLqUug" key="CONN_PARA_KEY_HIVE_JDBC_PROPERTIES" value="[{&quot;PROPERTY&quot;:&quot;hive.exec.dynamic.partition&quot;,&quot;VALUE&quot;:&quot;true&quot;},{&quot;PROPERTY&quot;:&quot;hive.exec.dynamic.partition.mode&quot;,&quot;VALUE&quot;:&quot;nonstrict&quot;}]"/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Schema xmi:id="_2z-QkHC_EeeLR6K2fPmFug" name="default" dataManager="_ddqvoHC_EeeLR6K2fPmFug">
     <ownedElement xsi:type="relational:TdTable" xmi:id="_58YzAHC_EeeLR6K2fPmFug" name="testtable" id="_58VvsHC_EeeLR6K2fPmFug" label="testtable" tableType="TABLE">
