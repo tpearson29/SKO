@@ -156,7 +156,7 @@
     <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;hdfs&quot;" show="false"/>
     <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hdfs.headless.keytab&quot;" show="false"/>
     <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;hdfs&quot;"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;tpearson&quot;"/>
     <elementParameter field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="0RMsyjmybrE=" show="false"/>
     <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
