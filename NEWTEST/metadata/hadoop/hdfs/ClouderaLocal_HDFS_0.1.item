@@ -2,12 +2,12 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendHDFS="http://www.talend.org/hdfs" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <TalendHDFS:HDFSConnection xmi:id="_ddnsUHC_EeeLR6K2fPmFug" name="ClouderaLocal_HDFS" label="ClouderaLocal_HDFS" dataPackage="_jlZpQHDHEeeLR6K2fPmFug" relativeHadoopClusterId="_MNwHAHC_EeeLR6K2fPmFug" userName="tpearson" rowSeparator="&quot;\n&quot;" fieldSeparator="&quot;;&quot;"/>
   <orgomg.cwm.resource.relational:Schema xmi:id="_jlZpQHDHEeeLR6K2fPmFug" name="HDFS" dataManager="_ddnsUHC_EeeLR6K2fPmFug">
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_jlZpQXDHEeeLR6K2fPmFug" name="nametest" id="_gI3Q8HDHEeeLR6K2fPmFug" label="nametest">
-      <taggedValue xmi:id="_jlZpQnDHEeeLR6K2fPmFug" tag="Comment" value=""/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jlZpQ3DHEeeLR6K2fPmFug" label="firstname" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jlZpRHDHEeeLR6K2fPmFug" label="lastname" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <additionalProperties xmi:id="_jlZpRXDHEeeLR6K2fPmFug" key="HDFS_PATH" value="/user/hdfs/nametest"/>
-      <additionalProperties xmi:id="_jlZpRnDHEeeLR6K2fPmFug" key="HDFS_FILE_TYPE" value="TEXT"/>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_1ul_UHxkEeetvIlZUPz3yQ" name="nametest" id="_1H_5YHxkEeetvIlZUPz3yQ" label="nametest">
+      <taggedValue xmi:id="_1ul_UXxkEeetvIlZUPz3yQ" tag="Comment" value=""/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1ul_UnxkEeetvIlZUPz3yQ" label="Column0" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1ul_U3xkEeetvIlZUPz3yQ" label="Column1" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <additionalProperties xmi:id="_1ul_VHxkEeetvIlZUPz3yQ" key="HDFS_PATH" value="/user/hdfs/nametest"/>
+      <additionalProperties xmi:id="_1ul_VXxkEeetvIlZUPz3yQ" key="HDFS_FILE_TYPE" value="TEXT"/>
     </ownedElement>
   </orgomg.cwm.resource.relational:Schema>
 </xmi:XMI>
