@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TalendHDFS:HDFSConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendHDFS="http://www.talend.org/hdfs" xmi:id="_NQGEUHxxEeetvIlZUPz3yQ" name="ClouderaLinux_HDFS" label="ClouderaLinux_HDFS" relativeHadoopClusterId="_0WoQYHxwEeetvIlZUPz3yQ" userName="tpearson" rowSeparator="&quot;\n&quot;" fieldSeparator="&quot;;&quot;" useHeader="true" headerValue="1" firstLineCaption="true"/>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendHDFS="http://www.talend.org/hdfs" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendHDFS:HDFSConnection xmi:id="_NQGEUHxxEeetvIlZUPz3yQ" name="ClouderaLinux_HDFS" label="ClouderaLinux_HDFS" dataPackage="_CrvfUHxyEeetvIlZUPz3yQ" relativeHadoopClusterId="_0WoQYHxwEeetvIlZUPz3yQ" userName="tpearson" rowSeparator="&quot;\n&quot;" fieldSeparator="&quot;;&quot;" useHeader="true" headerValue="1" firstLineCaption="true"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_CrvfUHxyEeetvIlZUPz3yQ" name="HDFS" dataManager="_NQGEUHxxEeetvIlZUPz3yQ">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_CrvfUXxyEeetvIlZUPz3yQ" name="namestest" id="_20MCgHxxEeetvIlZUPz3yQ" label="namestest">
+      <taggedValue xmi:id="_CrvfUnxyEeetvIlZUPz3yQ" tag="Comment" value=""/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CrvfU3xyEeetvIlZUPz3yQ" name="firstname" label="firstname" length="100" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CrvfVHxyEeetvIlZUPz3yQ" name="lastname" label="lastname" length="100" talendType="id_String"/>
+      <additionalProperties xmi:id="_CrvfVXxyEeetvIlZUPz3yQ" key="HDFS_PATH" value="/user/tpearson/namestest"/>
+      <additionalProperties xmi:id="_CrvfVnxyEeetvIlZUPz3yQ" key="HDFS_FILE_TYPE" value="TEXT"/>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Schema>
+</xmi:XMI>
