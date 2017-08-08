@@ -1,24 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendHDFS="http://www.talend.org/hdfs" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendHDFS="http://www.talend.org/hdfs" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
   <TalendHDFS:HDFSConnection xmi:id="_R6g0wHxgEeetvIlZUPz3yQ" name="ClouderaLinuxNew_HDFS" label="ClouderaLinuxNew_HDFS" dataPackage="_rvoa0HxvEeetvIlZUPz3yQ" relativeHadoopClusterId="_yyJ1oHxfEeetvIlZUPz3yQ" userName="hdfs" rowSeparator="\n" fieldSeparator=";" useHeader="true" headerValue="1" firstLineCaption="true"/>
-  <orgomg.cwm.resource.relational:Schema xmi:id="_rvoa0HxvEeetvIlZUPz3yQ" name="HDFS" dataManager="_R6g0wHxgEeetvIlZUPz3yQ">
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_rvoa0XxvEeetvIlZUPz3yQ" name="_SUCCESS" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_Hn30YHxtEeetvIlZUPz3yQ" label="_SUCCESS">
-      <taggedValue xmi:id="_rvoa0nxvEeetvIlZUPz3yQ" tag="Comment" value=""/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rvoa03xvEeetvIlZUPz3yQ" name="data" label="data" talendType="id_String"/>
-      <additionalProperties xmi:id="_rvoa1HxvEeetvIlZUPz3yQ" key="HDFS_PATH" value="/user/hdfs/rowtest/_SUCCESS"/>
-      <additionalProperties xmi:id="_rvoa1XxvEeetvIlZUPz3yQ" key="HDFS_FILE_TYPE" value="TEXT"/>
-    </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_rvoa1nxvEeetvIlZUPz3yQ" name="part_00001" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_IqwNsHxtEeetvIlZUPz3yQ" label="part_00001">
-      <taggedValue xmi:id="_rvoa13xvEeetvIlZUPz3yQ" tag="Comment" value=""/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rvoa2HxvEeetvIlZUPz3yQ" name="data" label="data" talendType="id_String"/>
-      <additionalProperties xmi:id="_rvoa2XxvEeetvIlZUPz3yQ" key="HDFS_PATH" value="/user/hdfs/rowtest/part-00001"/>
-      <additionalProperties xmi:id="_rvoa2nxvEeetvIlZUPz3yQ" key="HDFS_FILE_TYPE" value="TEXT"/>
-    </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_rvoa23xvEeetvIlZUPz3yQ" name="part_00000" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_PBDocHxtEeetvIlZUPz3yQ" label="part_00000">
-      <taggedValue xmi:id="_rvoa3HxvEeetvIlZUPz3yQ" tag="Comment" value=""/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rvoa3XxvEeetvIlZUPz3yQ" name="data" label="data" talendType="id_String"/>
-      <additionalProperties xmi:id="_rvoa3nxvEeetvIlZUPz3yQ" key="HDFS_PATH" value="/user/hdfs/rowtest/part-00000"/>
-      <additionalProperties xmi:id="_rvoa33xvEeetvIlZUPz3yQ" key="HDFS_FILE_TYPE" value="TEXT"/>
-    </ownedElement>
-  </orgomg.cwm.resource.relational:Schema>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_rvoa0HxvEeetvIlZUPz3yQ" name="HDFS" dataManager="_R6g0wHxgEeetvIlZUPz3yQ"/>
 </xmi:XMI>
