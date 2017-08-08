@@ -24,11 +24,11 @@
       <relatedItems xmi:id="_JKMHznFhEee10IOikLqUug" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_JKMHz3FhEee10IOikLqUug" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_JKMH0HFhEee10IOikLqUug" id="MDM" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_uCxqgHxhEeetvIlZUPz3yQ" id="_R6ZgAHxgEeetvIlZUPz3yQ" version="Latest" type="property"/>
       <relatedItems xmi:id="_uCxqgXxhEeetvIlZUPz3yQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_6bTQ8HxiEeetvIlZUPz3yQ" id="_R6V1oHxgEeetvIlZUPz3yQ" version="Latest" type="property"/>
       <relatedItems xmi:id="_6bT4AHxiEeetvIlZUPz3yQ" id="_R6V1oHxgEeetvIlZUPz3yQ - testme" version="Latest" type="schema"/>
       <relatedItems xmi:id="_KJQFoHxlEeetvIlZUPz3yQ" id="_dcgSAHC_EeeLR6K2fPmFug" version="Latest" type="property"/>
+      <relatedItems xmi:id="_p4m84HxxEeetvIlZUPz3yQ" id="_NPu38nxxEeetvIlZUPz3yQ" version="Latest" type="property"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_JKMH0XFhEee10IOikLqUug">
       <baseItem xmi:id="_JKMH0nFhEee10IOikLqUug" id="_zPtbcHDGEeeLR6K2fPmFug" version="0.1" type="job"/>
