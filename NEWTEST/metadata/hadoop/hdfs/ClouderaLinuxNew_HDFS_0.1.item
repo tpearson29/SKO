@@ -14,7 +14,7 @@
       <additionalProperties xmi:id="_rvoa2XxvEeetvIlZUPz3yQ" key="HDFS_PATH" value="/user/hdfs/rowtest/part-00001"/>
       <additionalProperties xmi:id="_rvoa2nxvEeetvIlZUPz3yQ" key="HDFS_FILE_TYPE" value="TEXT"/>
     </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_rvoa23xvEeetvIlZUPz3yQ" name="part_00000" id="_PBDocHxtEeetvIlZUPz3yQ" label="part_00000">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_rvoa23xvEeetvIlZUPz3yQ" name="part_00000" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_PBDocHxtEeetvIlZUPz3yQ" label="part_00000">
       <taggedValue xmi:id="_rvoa3HxvEeetvIlZUPz3yQ" tag="Comment" value=""/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rvoa3XxvEeetvIlZUPz3yQ" name="data" label="data" talendType="id_String"/>
       <additionalProperties xmi:id="_rvoa3nxvEeetvIlZUPz3yQ" key="HDFS_PATH" value="/user/hdfs/rowtest/part-00000"/>
