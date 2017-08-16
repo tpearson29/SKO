@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_R4j7kILEEeedI4NvwyTXYQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_R4j7kYLEEeedI4NvwyTXYQ" comment="" name="RosterData_Server" prompt="RosterData_Server?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_R4j7koLEEeedI4NvwyTXYQ" comment="" name="RosterData_Port" prompt="RosterData_Port?" promptNeeded="false" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_R4j7k4LEEeedI4NvwyTXYQ" comment="" name="RosterData_AdditionalParams" prompt="RosterData_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_R4j7lILEEeedI4NvwyTXYQ" comment="" name="RosterData_Password" prompt="RosterData_Password?" promptNeeded="false" type="id_Password" value="Z1zDtC9iGI0="/>
+  <contextParameter xmi:id="_R4j7lYLEEeedI4NvwyTXYQ" comment="" name="RosterData_Schema" prompt="RosterData_Schema?" promptNeeded="false" type="id_String" value="people"/>
+  <contextParameter xmi:id="_R4j7loLEEeedI4NvwyTXYQ" comment="" name="RosterData_Database" prompt="RosterData_Database?" promptNeeded="false" type="id_String" value="Datasphere"/>
+  <contextParameter xmi:id="_R4j7l4LEEeedI4NvwyTXYQ" comment="" name="RosterData_Login" prompt="RosterData_Login?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

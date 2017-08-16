@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="RosterData_Server" prompt="RosterData_Server?" promptNeeded="false" repositoryContextId="_4gShIH6kEeeoV_WVyiM4Vw" type="id_String" value="chronon.som.yale.edu"/>
+    <contextParameter comment="" name="RosterData_Port" prompt="RosterData_Port?" promptNeeded="false" repositoryContextId="_4gShIH6kEeeoV_WVyiM4Vw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="RosterData_AdditionalParams" prompt="RosterData_AdditionalParams?" promptNeeded="false" repositoryContextId="_4gShIH6kEeeoV_WVyiM4Vw" type="id_String" value=""/>
+    <contextParameter comment="" name="RosterData_Password" prompt="RosterData_Password?" promptNeeded="false" repositoryContextId="_4gShIH6kEeeoV_WVyiM4Vw" type="id_Password" value="NFOc0Zbwo439J0Rr219kzA=="/>
+    <contextParameter comment="" name="RosterData_Schema" prompt="RosterData_Schema?" promptNeeded="false" repositoryContextId="_4gShIH6kEeeoV_WVyiM4Vw" type="id_String" value="people"/>
+    <contextParameter comment="" name="RosterData_Database" prompt="RosterData_Database?" promptNeeded="false" repositoryContextId="_4gShIH6kEeeoV_WVyiM4Vw" type="id_String" value="Datasphere"/>
+    <contextParameter comment="" name="RosterData_Login" prompt="RosterData_Login?" promptNeeded="false" repositoryContextId="_4gShIH6kEeeoV_WVyiM4Vw" type="id_String" value="s_talendreader"/>
+    <contextParameter comment="" name="photobaseurl" prompt="photobaseurl?" promptNeeded="false" repositoryContextId="_ZrTEwH62EeeK35PBTzZNpQ" type="id_String" value="&quot;http://portal.som.yale.edu/sites/default/files/styles/yale_portal_profile_image/public/profile_pictures_default/&quot;"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/Workspace/TAC/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_r_PdwHeFEeeD9MtFcaiz3Q" name="DQTechnical"/>
+    <routinesParameter id="_r9ETgHeFEeeD9MtFcaiz3Q" name="DataMasking"/>
+    <routinesParameter id="_r_c5IHeFEeeD9MtFcaiz3Q" name="DataOperation"/>
+    <routinesParameter id="_r_DQgHeFEeeD9MtFcaiz3Q" name="DataQualityDependencies"/>
+    <routinesParameter id="_r-9w8HeFEeeD9MtFcaiz3Q" name="DataQuality"/>
+    <routinesParameter id="_r_J-MHeFEeeD9MtFcaiz3Q" name="DqStringHandling"/>
+    <routinesParameter id="_r_iYsHeFEeeD9MtFcaiz3Q" name="Mathematical"/>
+    <routinesParameter id="_r_sJsHeFEeeD9MtFcaiz3Q" name="Numeric"/>
+    <routinesParameter id="_r_xpQHeFEeeD9MtFcaiz3Q" name="Relational"/>
+    <routinesParameter id="_r_XZkHeFEeeD9MtFcaiz3Q" name="SQLike"/>
+    <routinesParameter id="_r_16sHeFEeeD9MtFcaiz3Q" name="StringHandling"/>
+    <routinesParameter id="_r_8BUHeFEeeD9MtFcaiz3Q" name="TalendDataGenerator"/>
+    <routinesParameter id="_sABg4HeFEeeD9MtFcaiz3Q" name="TalendDate"/>
+    <routinesParameter id="_sAIOkHeFEeeD9MtFcaiz3Q" name="TalendString"/>
+    <routinesParameter id="_7klBMIHIEeeJOvlZpkCWTQ" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://0.0.0.0:8088/&quot;"/>
+    <elementParameter field="TABLE" name="SCHEMAS">
+      <elementValue elementRef="SCHEMA" value="getRoster"/>
+      <elementValue elementRef="HTTP_VERB" value="GET"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;courses/roster&quot;"/>
+      <elementValue elementRef="CONSUMES" value="NONE"/>
+      <elementValue elementRef="PRODUCES" value="JSON"/>
+      <elementValue elementRef="STREAMING" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;RosterService&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="SAML"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="true"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_REQUEST" value="false"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_JSON_VALUES_TO_STRING" value="false"/>
+    <elementParameter field="CHECK" name="EXPOSE_SWAGGER_SPEC" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDE_DOC_INTO_SWAGGER_SPEC" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="WRONG_CALLS" name="copyOfcopyOfcopyOfcopyOfWRONG_CALLS">
+      <column defaultValue="" key="false" length="255" name="uri" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="method" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="error" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="output" name="getRoster">
+      <column comment="query" key="false" length="-1" name="termcode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="query" key="false" length="-1" name="crn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_qDxNMH6kEeeoV_WVyiM4Vw" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.RosterData_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.RosterData_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.RosterData_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.RosterData_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.RosterData_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kueYKKNhMlOkIGP/NxOtgHH5lWfnZYCPVds="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_qDxNMH6kEeeoV_WVyiM4Vw - View_CourseRoster" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;View_CourseRoster&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.TermCode,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.CRN,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.COURSENUMBER,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.SECTION,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.COURSETITLE,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.netid,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.FirstName,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.LastName,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.NamePronunciation,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.FullName,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.MBA,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.MBAE,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.Student,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.MAM,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.MMS,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.PHD,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.JointDegree,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.SilverScholar,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.EPHHMP,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.SEAS,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.Exchange,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.ClassYear,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.Cohort,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.Email,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.College1,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.Degree1,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.Major1,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.DegreeYear1,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.College2,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.Degree2,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.Major2,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.DegreeYear2,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.College3,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.Degree3,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.Major3,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.DegreeYear3,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.ResidenceCountries,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.PreSOMPosition,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.PreSOMEmployer,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.PreSOMFunction,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.PreSOMIndustry,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.PreSOMSector,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.Internship,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.HomeCountry,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.HomeState,&#xA;&#x9;&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster.Bio&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.RosterData_Schema+&quot;\&quot;.View_CourseRoster&#xD;&#xA;Where TermCode = &quot; + globalMap.get(&quot;getRoster.termcode&quot;) + &quot; and CRN = &quot; + globalMap.get(&quot;getRoster.crn&quot;)"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.RosterData_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TermCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CRN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COURSENUMBER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SECTION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COURSETITLE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="netid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NamePronunciation"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FullName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MBA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MBAE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Student"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MMS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JointDegree"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SilverScholar"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EPHHMP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEAS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Exchange"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ClassYear"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cohort"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="College1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Degree1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Major1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DegreeYear1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="College2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Degree2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Major2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DegreeYear2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="College3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Degree3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Major3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DegreeYear3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ResidenceCountries"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PreSOMPosition"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PreSOMEmployer"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PreSOMFunction"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PreSOMIndustry"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PreSOMSector"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Internship"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HomeCountry"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HomeState"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Bio"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="RosterData"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="View_CourseRoster" name="tMSSqlInput_1">
+      <column comment="" key="false" length="10" name="TermCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CRN" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="36" name="COURSENUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="SECTION" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="COURSETITLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="netid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="NamePronunciation" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="151" name="FullName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="MBA" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="MBAE" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="Student" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="MAM" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="MMS" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="PHD" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="JointDegree" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="SilverScholar" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="EPHHMP" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="SEAS" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="Exchange" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ClassYear" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Cohort" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="Email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="College1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Degree1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Major1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="DegreeYear1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="College2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Degree2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Major2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="DegreeYear2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="College3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Degree3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Major3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="DegreeYear3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="ResidenceCountries" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="PreSOMPosition" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="PreSOMEmployer" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="PreSOMFunction" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="PreSOMIndustry" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="PreSOMSector" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Internship" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="HomeCountry" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="HomeState" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="Bio" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="992" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="output">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row5" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="TermCode" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row5/TermCode"/>
+        <nodes name="CRN" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row5/CRN"/>
+        <nodes name="COURSENUMBER" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row5/COURSENUMBER"/>
+        <nodes name="SECTION" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.44" xpath="row5/SECTION" nullable="false"/>
+        <nodes name="COURSETITLE" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row5/COURSETITLE"/>
+        <nodes name="netid" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.4 //@node.3/@nodeData/@connections.43" xpath="row5/netid" nullable="false"/>
+        <nodes name="FirstName" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.7" xpath="row5/FirstName"/>
+        <nodes name="LastName" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.8" xpath="row5/LastName"/>
+        <nodes name="NamePronunciation" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.10" xpath="row5/NamePronunciation"/>
+        <nodes name="FullName" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.9" xpath="row5/FullName"/>
+        <nodes name="MBA" type="id_Boolean" outgoingConnections="//@node.3/@nodeData/@connections.32" xpath="row5/MBA" nullable="false"/>
+        <nodes name="MBAE" type="id_Boolean" outgoingConnections="//@node.3/@nodeData/@connections.33" xpath="row5/MBAE" nullable="false"/>
+        <nodes name="Student" type="id_Boolean" outgoingConnections="//@node.3/@nodeData/@connections.34" xpath="row5/Student"/>
+        <nodes name="MAM" type="id_Boolean" outgoingConnections="//@node.3/@nodeData/@connections.35" xpath="row5/MAM" nullable="false"/>
+        <nodes name="MMS" type="id_Boolean" outgoingConnections="//@node.3/@nodeData/@connections.36" xpath="row5/MMS"/>
+        <nodes name="PHD" type="id_Boolean" outgoingConnections="//@node.3/@nodeData/@connections.37" xpath="row5/PHD" nullable="false"/>
+        <nodes name="JointDegree" type="id_Boolean" outgoingConnections="//@node.3/@nodeData/@connections.38" xpath="row5/JointDegree" nullable="false"/>
+        <nodes name="SilverScholar" type="id_Boolean" outgoingConnections="//@node.3/@nodeData/@connections.39" xpath="row5/SilverScholar" nullable="false"/>
+        <nodes name="EPHHMP" type="id_Boolean" outgoingConnections="//@node.3/@nodeData/@connections.40" xpath="row5/EPHHMP" nullable="false"/>
+        <nodes name="SEAS" type="id_Boolean" outgoingConnections="//@node.3/@nodeData/@connections.41" xpath="row5/SEAS" nullable="false"/>
+        <nodes name="Exchange" type="id_Boolean" outgoingConnections="//@node.3/@nodeData/@connections.42" xpath="row5/Exchange" nullable="false"/>
+        <nodes name="ClassYear" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.5" xpath="row5/ClassYear"/>
+        <nodes name="Cohort" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.6" xpath="row5/Cohort"/>
+        <nodes name="Email" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.28" xpath="row5/Email"/>
+        <nodes name="College1" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.12" xpath="row5/College1"/>
+        <nodes name="Degree1" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.15" xpath="row5/Degree1"/>
+        <nodes name="Major1" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.18" xpath="row5/Major1"/>
+        <nodes name="DegreeYear1" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.21" xpath="row5/DegreeYear1"/>
+        <nodes name="College2" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.13" xpath="row5/College2"/>
+        <nodes name="Degree2" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.16" xpath="row5/Degree2"/>
+        <nodes name="Major2" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.19" xpath="row5/Major2"/>
+        <nodes name="DegreeYear2" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.22" xpath="row5/DegreeYear2"/>
+        <nodes name="College3" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.14" xpath="row5/College3"/>
+        <nodes name="Degree3" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.17" xpath="row5/Degree3"/>
+        <nodes name="Major3" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.20" xpath="row5/Major3"/>
+        <nodes name="DegreeYear3" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.23" xpath="row5/DegreeYear3"/>
+        <nodes name="ResidenceCountries" type="id_String" xpath="row5/ResidenceCountries"/>
+        <nodes name="PreSOMPosition" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.25" xpath="row5/PreSOMPosition"/>
+        <nodes name="PreSOMEmployer" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.24" xpath="row5/PreSOMEmployer"/>
+        <nodes name="PreSOMFunction" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.26" xpath="row5/PreSOMFunction"/>
+        <nodes name="PreSOMIndustry" type="id_String" xpath="row5/PreSOMIndustry"/>
+        <nodes name="PreSOMSector" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.27" xpath="row5/PreSOMSector"/>
+        <nodes name="Internship" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.31" xpath="row5/Internship"/>
+        <nodes name="HomeCountry" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.29" xpath="row5/HomeCountry"/>
+        <nodes name="HomeState" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.30" xpath="row5/HomeState"/>
+        <nodes name="Bio" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.11" xpath="row5/Bio"/>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" name="output" allInOne="true">
+        <nodes name="body" expression="" type="id_Document" xpath="output/body">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="Course" expression="" type="id_String" xpath="output.body:/Course" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="CRN" expression="row5.CRN" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="output.body:/Course/CRN"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="TermCode" expression="row5.TermCode" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="output.body:/Course/TermCode"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="COURSENUMBER" expression="row5.COURSENUMBER" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="output.body:/Course/COURSENUMBER"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="COURSETITLE" expression="row5.COURSETITLE" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="output.body:/Course/COURSETITLE"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="roster" expression="" type="id_String" xpath="output.body:/Course/roster" main="true">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="student" expression="" type="id_String" xpath="output.body:/Course/roster/student" loop="true" main="true">
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="netid" expression="row5.netid" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.4" xpath="output.body:/Course/roster/student/netid"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="ClassYear" expression="row5.ClassYear" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.5" xpath="output.body:/Course/roster/student/ClassYear"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="Cohort" expression="row5.Cohort" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.6" xpath="output.body:/Course/roster/student/Cohort"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="FirstName" expression="row5.FirstName" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.7" xpath="output.body:/Course/roster/student/FirstName"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="LastName" expression="row5.LastName" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.8" xpath="output.body:/Course/roster/student/LastName"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="FullName" expression="row5.FullName" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.9" xpath="output.body:/Course/roster/student/FullName"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="NamePronunciation" expression="row5.NamePronunciation" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.10" xpath="output.body:/Course/roster/student/NamePronunciation"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="Bio" expression="row5.Bio" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.11" xpath="output.body:/Course/roster/student/Bio"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="College1" expression="row5.College1" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.12" xpath="output.body:/Course/roster/student/College1"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="College2" expression="row5.College2" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.13" xpath="output.body:/Course/roster/student/College2"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="College3" expression="row5.College3" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.14" xpath="output.body:/Course/roster/student/College3"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="Degree1" expression="row5.Degree1" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.15" xpath="output.body:/Course/roster/student/Degree1"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="Degree2" expression="row5.Degree2" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.16" xpath="output.body:/Course/roster/student/Degree2"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="Degree3" expression="row5.Degree3" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.17" xpath="output.body:/Course/roster/student/Degree3"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="Major1" expression="row5.Major1" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.18" xpath="output.body:/Course/roster/student/Major1"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="Major2" expression="row5.Major2" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.19" xpath="output.body:/Course/roster/student/Major2"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="Major3" expression="row5.Major3" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.20" xpath="output.body:/Course/roster/student/Major3"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="DegreeYear1" expression="row5.DegreeYear1" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.21" xpath="output.body:/Course/roster/student/DegreeYear1"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="DegreeYear2" expression="row5.DegreeYear2" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.22" xpath="output.body:/Course/roster/student/DegreeYear2"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="DegreeYear3" expression="row5.DegreeYear3" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.23" xpath="output.body:/Course/roster/student/DegreeYear3"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="PreSOMEmployer" expression="row5.PreSOMEmployer" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.24" xpath="output.body:/Course/roster/student/PreSOMEmployer"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="PreSOMPosition" expression="row5.PreSOMPosition" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.25" xpath="output.body:/Course/roster/student/PreSOMPosition"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="PreSOMFunction" expression="row5.PreSOMFunction" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.26" xpath="output.body:/Course/roster/student/PreSOMFunction"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="PreSOMSector" expression="row5.PreSOMSector" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.27" xpath="output.body:/Course/roster/student/PreSOMSector"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="Email" expression="row5.Email" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.28" xpath="output.body:/Course/roster/student/Email"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="HomeCountry" expression="row5.HomeCountry" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.29" xpath="output.body:/Course/roster/student/HomeCountry"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="HomeState" expression="row5.HomeState" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.30" xpath="output.body:/Course/roster/student/HomeState"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="Internship" expression="row5.Internship" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.31" xpath="output.body:/Course/roster/student/Internship"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="MBA" expression="row5.MBA" type="id_Boolean" incomingConnections="//@node.3/@nodeData/@connections.32" xpath="output.body:/Course/roster/student/MBA"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="MBAE" expression="row5.MBAE" type="id_Boolean" incomingConnections="//@node.3/@nodeData/@connections.33" xpath="output.body:/Course/roster/student/MBAE"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="Student" expression="row5.Student" type="id_Boolean" incomingConnections="//@node.3/@nodeData/@connections.34" xpath="output.body:/Course/roster/student/Student"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="MAM" expression="row5.MAM" type="id_Boolean" incomingConnections="//@node.3/@nodeData/@connections.35" xpath="output.body:/Course/roster/student/MAM"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="MMS" expression="row5.MMS" type="id_Boolean" incomingConnections="//@node.3/@nodeData/@connections.36" xpath="output.body:/Course/roster/student/MMS"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="PHD" expression="row5.PHD" type="id_Boolean" incomingConnections="//@node.3/@nodeData/@connections.37" xpath="output.body:/Course/roster/student/PHD"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="JointDegree" expression="row5.JointDegree" type="id_Boolean" incomingConnections="//@node.3/@nodeData/@connections.38" xpath="output.body:/Course/roster/student/JointDegree"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="SilverScholar" expression="row5.SilverScholar" type="id_Boolean" incomingConnections="//@node.3/@nodeData/@connections.39" xpath="output.body:/Course/roster/student/SilverScholar"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="EPHHMP" expression="row5.EPHHMP" type="id_Boolean" incomingConnections="//@node.3/@nodeData/@connections.40" xpath="output.body:/Course/roster/student/EPHHMP"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="SEAS" expression="row5.SEAS" type="id_Boolean" incomingConnections="//@node.3/@nodeData/@connections.41" xpath="output.body:/Course/roster/student/SEAS"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="Exchange" expression="row5.Exchange" type="id_Boolean" incomingConnections="//@node.3/@nodeData/@connections.42" xpath="output.body:/Course/roster/student/Exchange"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="photourl" expression="context.photobaseurl +  row5.netid + &quot;.jpg&quot;" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.43" xpath="output.body:/Course/roster/student/photourl"/>
+              </children>
+            </children>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="coursesection" expression="row5.SECTION" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.44" xpath="output.body:/Course/coursesection"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.1" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.2" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.4" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.5" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.21" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.22" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.6" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.7" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.9" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.8" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.45" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.24" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.28" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.32" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.25" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.29" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.12"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.33" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.13"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.26" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.14"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.30" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.15"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.34" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.16"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.27" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.17"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.31" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.18"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.35" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.19"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.38" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.20"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.37" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.21"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.39" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.22"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.41" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.23"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.23" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.24"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.43" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.25"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.44" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.26"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.42" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.27"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.10" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.28"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.11" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.29"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.12" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.30"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.13" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.31"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.14" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.32"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.15" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.33"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.16" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.34"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.17" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.35"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.18" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.36"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.19" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.37"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.20" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.38"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.5" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0/@children.39"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.3" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1312" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_1" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_1">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="getRoster" lineStyle="0" metaname="getRoster" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tFlowToIterate_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="termcode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="crn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="getRoster" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tMSSqlInput_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="output" lineStyle="0" metaname="output" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tRESTResponse_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="output" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

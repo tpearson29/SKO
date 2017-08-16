@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_R422gILEEeedI4NvwyTXYQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_R422gYLEEeedI4NvwyTXYQ" comment="" name="photobaseurl" prompt="photobaseurl?" promptNeeded="false" type="id_String" value="&quot;http://portal.som.yale.edu/sites/default/files/styles/yale_portal_profile_image/public/profile_pictures_default/&quot;"/>
+</talendfile:ContextType>
