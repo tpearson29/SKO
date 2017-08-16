@@ -255,6 +255,7 @@
       <relatedItems xmi:id="_R9eQ0oLEEeedI4NvwyTXYQ" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_R9eQ04LEEeedI4NvwyTXYQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_R9eQ1ILEEeedI4NvwyTXYQ" id="_qDxNMH6kEeeoV_WVyiM4Vw - View_CourseRoster" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_D6rHkILIEeedI4NvwyTXYQ" id="MDM" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_R9eQ1YLEEeedI4NvwyTXYQ">
       <baseItem xmi:id="_R9eQ1oLEEeedI4NvwyTXYQ" id="_148UMIKxEeetjfOrbYhp6w" version="0.2" type="job"/>
