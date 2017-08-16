@@ -273,6 +273,12 @@
       <relatedItems xmi:id="_R9eQ4oLEEeedI4NvwyTXYQ" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_R9eQ44LEEeedI4NvwyTXYQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_R9eQ5ILEEeedI4NvwyTXYQ" id="_qDxNMH6kEeeoV_WVyiM4Vw - View_CourseRoster" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_Q4UCsILIEeedI4NvwyTXYQ" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Q4UCsYLIEeedI4NvwyTXYQ" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Q4UCsoLIEeedI4NvwyTXYQ" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Q4UCs4LIEeedI4NvwyTXYQ" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Q4UCtILIEeedI4NvwyTXYQ" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Q4UCtYLIEeedI4NvwyTXYQ" id="MDM" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_R9eQ5YLEEeedI4NvwyTXYQ">
       <baseItem xmi:id="_R9eQ5oLEEeedI4NvwyTXYQ" id="_guaDQIG4EeePPa0My9qG4Q" version="0.1" type="job"/>

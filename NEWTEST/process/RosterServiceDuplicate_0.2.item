@@ -3,11 +3,11 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="RosterData_Login" prompt="RosterData_Login?" promptNeeded="false" repositoryContextId="_4gShIH6kEeeoV_WVyiM4Vw" type="id_String" value=""/>
     <contextParameter comment="" name="RosterData_Schema" prompt="RosterData_Schema?" promptNeeded="false" repositoryContextId="_4gShIH6kEeeoV_WVyiM4Vw" type="id_String" value="people"/>
-    <contextParameter comment="" name="RosterData_Server" prompt="RosterData_Server?" promptNeeded="false" repositoryContextId="_4gShIH6kEeeoV_WVyiM4Vw" type="id_String" value="chronon.som.yale.edu"/>
+    <contextParameter comment="" name="RosterData_Server" prompt="RosterData_Server?" promptNeeded="false" repositoryContextId="_4gShIH6kEeeoV_WVyiM4Vw" type="id_String" value=""/>
     <contextParameter comment="" name="RosterData_AdditionalParams" prompt="RosterData_AdditionalParams?" promptNeeded="false" repositoryContextId="_4gShIH6kEeeoV_WVyiM4Vw" type="id_String" value=""/>
     <contextParameter comment="" name="RosterData_Port" prompt="RosterData_Port?" promptNeeded="false" repositoryContextId="_4gShIH6kEeeoV_WVyiM4Vw" type="id_String" value="1433"/>
     <contextParameter comment="" name="RosterData_Database" prompt="RosterData_Database?" promptNeeded="false" repositoryContextId="_4gShIH6kEeeoV_WVyiM4Vw" type="id_String" value="Datasphere"/>
-    <contextParameter comment="" name="RosterData_Password" prompt="RosterData_Password?" promptNeeded="false" repositoryContextId="_4gShIH6kEeeoV_WVyiM4Vw" type="id_Password" value=""/>
+    <contextParameter comment="" name="RosterData_Password" prompt="RosterData_Password?" promptNeeded="false" repositoryContextId="_4gShIH6kEeeoV_WVyiM4Vw" type="id_Password" value="Z1zDtC9iGI0="/>
     <contextParameter comment="" name="photobaseurl" prompt="photobaseurl?" promptNeeded="false" repositoryContextId="_ZrTEwH62EeeK35PBTzZNpQ" type="id_String" value="&quot;http://portal.som.yale.edu/sites/default/files/styles/yale_portal_profile_image/public/profile_pictures_default/&quot;"/>
   </context>
   <parameters>
@@ -66,7 +66,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/Workspace/TAC/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend-Studio-20170623_1246-V6.4.1/workspace/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -115,6 +115,12 @@
     <routinesParameter id="_7kL_oIHIEeeJOvlZpkCWTQ" name="TalendDate"/>
     <routinesParameter id="_7klBMIHIEeeJOvlZpkCWTQ" name="TalendStringUtil"/>
     <routinesParameter id="_7kYz8IHIEeeJOvlZpkCWTQ" name="TalendString"/>
+    <routinesParameter id="_fbcpBEQfEeeE05wrFdLZLw" name="DQTechnical"/>
+    <routinesParameter id="_faQWMEQfEeeE05wrFdLZLw" name="DataMasking"/>
+    <routinesParameter id="_fbTfEEQfEeeE05wrFdLZLw" name="DataQualityDependencies"/>
+    <routinesParameter id="_faaHMEQfEeeE05wrFdLZLw" name="DataQuality"/>
+    <routinesParameter id="_fbcpAEQfEeeE05wrFdLZLw" name="DqStringHandling"/>
+    <routinesParameter id="_fbmaA0QfEeeE05wrFdLZLw" name="MDM"/>
   </parameters>
   <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
