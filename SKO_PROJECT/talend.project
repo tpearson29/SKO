@@ -7,6 +7,24 @@
     <documentationStatus xmi:id="_REonUOgQEeadudWOaEDBzA" label="unchecked" code="UCK"/>
     <documentationStatus xmi:id="_REonUegQEeadudWOaEDBzA" label="checked" code="CHK"/>
     <documentationStatus xmi:id="_REonUugQEeadudWOaEDBzA" label="validated" code="VAL"/>
+    <ItemsRelations xmi:id="_JB6wYJjQEeeCBLCbEU-1kA">
+      <baseItem xmi:id="_JB6wYZjQEeeCBLCbEU-1kA" id="_f7VV0OgQEeadudWOaEDBzA" version="0.1" type="job"/>
+      <relatedItems xmi:id="_JB6wYpjQEeeCBLCbEU-1kA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_JB6wY5jQEeeCBLCbEU-1kA" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_JB6wZJjQEeeCBLCbEU-1kA" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_JB6wZZjQEeeCBLCbEU-1kA" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_JB6wZpjQEeeCBLCbEU-1kA" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_JB6wZ5jQEeeCBLCbEU-1kA" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_JB6waJjQEeeCBLCbEU-1kA" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_JB6waZjQEeeCBLCbEU-1kA" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_JB6wapjQEeeCBLCbEU-1kA" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_JB6wa5jQEeeCBLCbEU-1kA" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_JB6wbJjQEeeCBLCbEU-1kA" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_JB6wbZjQEeeCBLCbEU-1kA" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_JB6wbpjQEeeCBLCbEU-1kA" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_JB6wb5jQEeeCBLCbEU-1kA" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_JB6wcJjQEeeCBLCbEU-1kA" id="MDM" version="Latest" type="routine"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_RD5AcOgQEeadudWOaEDBzA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_RD5AcegQEeadudWOaEDBzA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_RD5AcugQEeadudWOaEDBzA" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="ok"/>
@@ -365,8 +383,29 @@
     <migrationTask xmi:id="_Rn4fn-gQEeadudWOaEDBzA" id="org.talend.repository.model.migration.ChangeMSSQLDBVersionMigrationTask" breaks="6.2.0" version="6.3.0" status="noimpact"/>
     <migrationTask xmi:id="_Rn4foOgQEeadudWOaEDBzA" id="org.talend.datacleansing.core.migration.UpdateTMatchGroupOutPutSchemaTask" breaks="6.3.1" version="6.3.1" status="noimpact"/>
     <migrationTask xmi:id="_Rn4foegQEeadudWOaEDBzA" id="org.talend.repository.model.migration.ChangeTypeMappingForRedshift" breaks="6.3.0" version="6.3.1" status="noimpact"/>
-    <migrationTask xmi:id="_Rn4fougQEeadudWOaEDBzA" id="org.talend.repository.model.migration.AutoUpdateRelationsMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_IFVMUZjQEeeCBLCbEU-1kA" id="org.talend.repository.model.migration.AddJavaVersionMigrationTask" breaks="6.3.1" version="6.4.0" status="ok"/>
+    <migrationTask xmi:id="_JB2e8JjQEeeCBLCbEU-1kA" id="org.talend.repository.model.migration.FixProjectResourceLink" breaks="5.1.1" version="5.1.2" status="noimpact"/>
+    <migrationTask xmi:id="_JB2e8ZjQEeeCBLCbEU-1kA" id="org.talend.camel.designer.migration.UpdatecSOAPServiceNamePortNameDefault" breaks="5.4.1" version="5.6.1" status="noimpact"/>
+    <migrationTask xmi:id="_JB2e8pjQEeeCBLCbEU-1kA" id="org.talend.repository.model.migration.FixUnevenItemContextParametersMigrationTask" breaks="6.1.0" version="6.4.0" status="noimpact"/>
+    <migrationTask xmi:id="_JB2e85jQEeeCBLCbEU-1kA" id="org.talend.repository.model.migration.AddNewIgnoreNullSettingForTMicrosoftCrmOutputTask" breaks="6.2.1" version="6.2.2" status="ok"/>
+    <migrationTask xmi:id="_JB2e9JjQEeeCBLCbEU-1kA" id="org.talend.repository.model.migration.UncheckExceptionOnFileExistMigrationTask" breaks="6.3.1" version="6.4.0" status="ok"/>
+    <migrationTask xmi:id="_JB2e9ZjQEeeCBLCbEU-1kA" id="org.talend.repository.model.migration.ResetVMArgumentMigrationTask" breaks="6.3.2" version="6.4.0" status="ok"/>
+    <migrationTask xmi:id="_JB2e9pjQEeeCBLCbEU-1kA" id="org.talend.designer.core.generic.model.migration.NewAzureBlobMigrationTask" breaks="6.4.0" version="6.4.0" status="noimpact"/>
+    <migrationTask xmi:id="_JB2e95jQEeeCBLCbEU-1kA" id="org.talend.camel.designer.migration.RenameToCSoapAndCRestMigrationTask" breaks="5.6.0" version="6.4.0" status="noimpact"/>
+    <migrationTask xmi:id="_JB2e-JjQEeeCBLCbEU-1kA" id="org.talend.camel.designer.migration.CCXFWsdlFileRepoMigrationTask" breaks="5.2.0" version="6.4.1" status="noimpact"/>
+    <migrationTask xmi:id="_JB2e-ZjQEeeCBLCbEU-1kA" id="org.talend.designer.core.generic.model.migration.NewMarketoMigrationTask" breaks="6.4.0" version="6.4.0" status="noimpact"/>
+    <migrationTask xmi:id="_JB2e-pjQEeeCBLCbEU-1kA" id="org.talend.designer.core.generic.model.migration.NewNetsuiteMigrationTask" breaks="6.4.0" version="6.4.0" status="noimpact"/>
+    <migrationTask xmi:id="_JB2e-5jQEeeCBLCbEU-1kA" id="org.talend.designer.joblet.repository.migration.ResetJobletComponentNameMigrationTask" breaks="6.3.0" version="6.3.1" status="ok"/>
+    <migrationTask xmi:id="_JB2e_JjQEeeCBLCbEU-1kA" id="org.talend.repository.hadoopcluster.migration.UpdateHadoopConfsForContextualHadoopClusterMigrationTask" breaks="6.4.0" version="6.4.0" status="noimpact"/>
+    <migrationTask xmi:id="_JB2e_ZjQEeeCBLCbEU-1kA" id="org.talend.repository.model.migration.ResetItemLabelMigrationTask" breaks="4.2.4" version="5.2.2" status="noimpact"/>
+    <migrationTask xmi:id="_JB2e_pjQEeeCBLCbEU-1kA" id="org.talend.repository.model.migration.AddApiModeToMarketoComponentsMigrationTask" breaks="6.1.0" version="6.3.2" status="ok"/>
+    <migrationTask xmi:id="_JB2e_5jQEeeCBLCbEU-1kA" id="org.talend.repository.model.migration.ChangeDBversionForSybaseIQMigrationTask" breaks="6.3.1" version="6.4.0" status="ok"/>
+    <migrationTask xmi:id="_JB2fAJjQEeeCBLCbEU-1kA" id="org.talend.designer.mapreduce.repository.migration.AddSupportedSparkVersionMigrationTask" breaks="6.4.0" version="6.4.0" status="noimpact"/>
+    <migrationTask xmi:id="_JB2fAZjQEeeCBLCbEU-1kA" id="org.talend.datacleansing.core.migration.UpdateTPatternParamTask" breaks="6.4.0" version="6.4.0" status="ok"/>
+    <migrationTask xmi:id="_JB2fApjQEeeCBLCbEU-1kA" id="org.talend.datacleansing.core.migration.UpdateTMultiPatternTableParamTask" breaks="6.4.0" version="6.4.0" status="ok"/>
+    <migrationTask xmi:id="_JB2fA5jQEeeCBLCbEU-1kA" id="org.talend.repository.model.migration.AddFailOnErrorOnTFileCopyTDI38441" breaks="6.3.1" version="6.4.0" status="ok"/>
+    <migrationTask xmi:id="_JB2fBJjQEeeCBLCbEU-1kA" id="org.talend.repository.model.migration.SetSparkDataframeAlphabeticalSortOrder" breaks="6.1.0" version="6.1.0" status="noimpact"/>
+    <migrationTask xmi:id="_Rn4fougQEeadudWOaEDBzA" id="org.talend.repository.model.migration.AutoUpdateRelationsMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_Pp5usugQEeadudWOaEDBzA" login="admin@company.com" firstName="admin" lastName="admin" type="DI" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_REyYUOgQEeadudWOaEDBzA" login="tpearson@talend.com" firstName="tony" lastName="pearson" type="MDM" additionnalData="{}"/>
